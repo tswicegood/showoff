@@ -16,3 +16,21 @@ TODO
 - simple animations (image from A to B)
 
 - preshow (vacation slides and countdown)
+
+- add support for other markup
+  - add support for HAML
+  - add support for HTML
+- pass all slide files through Liquid for parsing variables
+  - allow for including script files from source
+  - variables should be pulled from showoff.json
+  -{{ presentation.location.today }} should map to showoff.json of where the talk has been given based on today's date
+- open a second port for running show
+- create a Mobile WebKit interface
+  - with slide notes and next/previous/jump
+  - questions from audience
+  - ability to display question as slide
+  - ability to mute members
+- add markup (potentially HAML/HTML) for slide notes
+- add ability to turn slide styles off
+- add ability to turn off auto-height centering
+- add markup convention for running tests against code being shown
