@@ -34,3 +34,4 @@ TODO
 - add ability to turn slide styles off
 - add ability to turn off auto-height centering
 - add markup convention for running tests against code being shown
+- do away with JavaScript-based height calculations (if/where possible)
