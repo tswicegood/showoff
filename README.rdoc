@@ -138,6 +138,17 @@ definition, where tname is one of the following supported transitions:
 
 The transitions are provided by jQuery Cycle plugin. See http://www.malsup.com/jquery/cycle/browser.html to view the effects and http://www.malsup.com/jquery/cycle/adv2.html for how to add custom effects.
 
+Charts can be specified through the use of chart=cname on the !SLIDE definition,
+where cname is one of the following supported chart types:
+
+* pie
+* bar (both single and multi-series versions)
+* stacked
+
+Data for the chart is taken from a table on the slide itself, with 'th' elements
+assumed to be labels and 'td' elements assumed to be data points for a label.  Multiple
+'td' elements per row will mean multiple series.
+
 You can manage the presentation with the following keys:
 
 * space, cursor right: next slide
