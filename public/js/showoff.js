@@ -58,7 +58,6 @@ function loadSlides(load_slides, prefix) {
 }
 
 function initializeCharts(prefix) {
-  var raphael = Raphael.ninja();
   $("#slides .chart").each(function(index,element) {
     chart = $(element);
     table = $('table', chart.parent());
@@ -66,7 +65,7 @@ function initializeCharts(prefix) {
 
     // Apply the chart based on the type from the element
     chartType = chart.attr('data-chart');
-    chartHandlers[chartType](chart, table)(raphael);
+    chartHandlers[chartType](chart, table);
   });
   initializePresentation(prefix);
 }

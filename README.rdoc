@@ -144,10 +144,16 @@ where cname is one of the following supported chart types:
 * pie
 * bar (both single and multi-series versions)
 * stacked
+* line
+* area
+* dot
 
 Data for the chart is taken from a table on the slide itself, with 'th' elements
-assumed to be labels and 'td' elements assumed to be data points for a label.  Multiple
-'td' elements per row will mean multiple series.
+assumed to be labels and 'td' elements assumed to be data points in a series.  
+You can have multiple series which all share the same labels (one 'th' per row,
+with multiple 'td' elements), or multiple series with differing labels (pairs of
+'th' and 'td' elements per row).  Blank cells are ignored.  Best just to see
+section 'four' of the example!
 
 You can manage the presentation with the following keys:
 
